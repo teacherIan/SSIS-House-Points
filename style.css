@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+
+}
+
+.logo-ssis {
+    width: 100vw;
+    opacity: .05;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    gap: 0.1rem;
+}
+
+.Ruby {
+
+    background-color: #c11c22;
+    color: white;
+
+}
+
+.Sapphire {
+
+    background-color: #1271b5;
+    color: white;
+}
+
+.Pearl {
+    color: white;
+    background-color: black;
+}
+
+.Amber {
+    background-color: #e46725;
+    color: white;
+}
+
+.house-points {
+    margin-top: -10px;
+}
+
+.house-icon {
+    height: 250px;
+
+
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: blue;
+    opacity: 0;
+    color: white;
+    font-size: 20vw;
+    text-align: center;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .house-icon {
+        height: 150px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .house-icon {
+        height: 100px;
+
+    }
+
+    * {
+        font-size: 2rem;
+    }
+}
