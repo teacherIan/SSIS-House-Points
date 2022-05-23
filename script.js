@@ -23,6 +23,13 @@ submit.addEventListener('click', () => {
   houses[1].totalPoints = sapphireNum;
   houses[2].totalPoints = amberNum;
   houses[3].totalPoints = pearlNum;
+  
+  for (let i = 0; i < houses.length; i++) {
+  if (houses[i].totalPoints > largestScore) {
+    largestScore = houses[i].totalPoints;
+    winningIndex = i;
+  }
+}
 
   form.style.display = 'none';
 });
@@ -106,12 +113,7 @@ const houses = [
 let winningIndex = 0;
 let largestScore = 0;
 
-for (let i = 0; i < houses.length; i++) {
-  if (houses[i].totalPoints > largestScore) {
-    largestScore = houses[i].totalPoints;
-    winningIndex = i;
-  }
-}
+
 
 let finished;
 
