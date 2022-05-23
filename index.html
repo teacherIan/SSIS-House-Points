@@ -12,18 +12,61 @@
 
 <body>
 
-    <div class="winner" id="winner">
-        AMBER WINS
+    <div class="form-container" id="form-container">
+        <div class="inputs">
+            <form action="submit">
+                <div class="input-header">
+                    input points
+                </div>
+                <div class="house-Pts">
+                    Ruby:
+                    <input class='input' type="text" name="Ruby" id="ruby-input">
+                </div>
+
+                <div class="house-Pts">
+                    Pearl:
+                    <input class='input' type="text" name="Ruby" id="pearl-input">
+                </div>
+                <div class="house-Pts">
+                    Sapphire:
+                    <input class='input' type="text" name="Ruby" id="sapphire-input">
+                </div>
+                <div class="house-Pts">
+                    Amber:
+                    <input class='input' type="text" name="Ruby" id="amber-input">
+                </div>
+                <input class='submit' type="button" value="Submit" id="submit">
+            </form>
+        </div>
+
 
     </div>
 
+
+
+    <div class="start-button-container">
+        <div class="start-button">
+            <div class="wrap">
+                <button id='start-button' class="button">START</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--InnerHTML dependent on JS-->
+    <div class="winner" id="winner"></div>
+
+    <!--Background logo.  Might need to be centered for cellphones-->
     <div class="logo">
         <img class='logo-ssis' src="/SSIS__logo.png" alt="" srcset="">
     </div>
 
 
-    <div class="container">
-
+    <!--The four containers for the four houses.  The '0' in house points is filler and never used-->
+    <div class="houses-container">
         <div class="Ruby flex">
             <div class="house-header">
                 <img class="house-icon scale" src="/rubyDark.jpg" alt="" srcset="">
